@@ -281,9 +281,6 @@ body {
     transform 0.4s ease;
 }
 
-.product-card:hover .description-icon {
-}
-
 .product-description p {
   color: #7183a0;
   font-size: 16px;
