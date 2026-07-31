@@ -465,6 +465,171 @@ body {
   }
 }
 
+.time-section {
+  background: #003ff2;
+  color: white;
+}
+
+.time-intro {
+  max-width: 1340px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 90px 20px 60px;
+}
+
+.time-heading h2 {
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+.time-copy p {
+  max-width: 520px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.time-button {
+  display: inline-block;
+  padding: 16px 30px;
+  color: #003ff2;
+  background: #ffffff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.time-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1340px;
+  margin: 0 auto 90px;
+  padding: 0 20px 60px;
+}
+
+.time-card {
+  border-radius: 28px;
+  padding: 32px;
+  min-height: 260px;
+}
+
+.time-card-input {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.time-label {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.time-pill-group {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.time-pill {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.time-invest-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 34px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 28px;
+}
+
+.time-amount {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.currency-button {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  border-radius: 999px;
+  padding: 14px 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.time-card-results {
+  background: #d5fbe1;
+  color: #003d24;
+  position: relative;
+  display: grid;
+  gap: 22px;
+}
+
+.time-result-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  color: #0e7e3d;
+  font-size: 15px;
+}
+
+.time-result-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.amount {
+  display: block;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.amount-small {
+  font-size: 36px;
+}
+
+.time-badge {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #15d54f;
+  box-shadow: 0 0 0 10px rgba(21, 213, 79, 0.15);
+}
+
+.time-card-bank {
+  background: rgba(255, 255, 255, 0.16);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.time-bank-amount {
+  margin-top: 24px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
 .quote-mark {
   position: absolute;
   top: 24px;
@@ -609,9 +774,7 @@ body {
   .product-description p {
     font-size: 14px;
   }
-}
 
-@media (max-width: 480px) {
   .trust-top {
     flex-direction: column;
     align-items: flex-start;
@@ -760,9 +923,7 @@ body {
   .product-description p {
     font-size: 13px;
   }
-}
 
-@media (min-width: 481px) and (max-width: 768px) {
   .navbar {
     height: 75px;
     padding: 0 24px;
@@ -878,8 +1039,7 @@ body {
     font-size: 14px;
   }
 
-  
-@media (max-width: 768px) {
+
   .trust-intro {
     display: flex;
     flex-direction: column;
@@ -907,9 +1067,44 @@ body {
   .trust-copy h2 {
     font-size: 48px;
   }
+
+  .time-intro {
+    padding: 70px 16px 40px;
+    gap: 24px;
+  }
+
+  .time-heading h2 {
+    font-size: 44px;
+  }
+
+  .time-copy p {
+    font-size: 17px;
+  }
+
+  .time-button {
+    padding: 14px 24px;
+  }
+
+  .time-card {
+    padding: 26px;
+  }
 }
 
+@media (max-width: 1024px) {
+  .time-intro {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .time-heading h2 {
+    font-size: 58px;
+  }
+
+  .time-cards {
+    grid-template-columns: 1fr;
+  }
 }
+
 
 @media (min-width: 1280px) {
   .navbar {
